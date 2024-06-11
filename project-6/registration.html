@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>rigesterpage</title>
+        <style>
+            body{
+                background-color:pink;
+                background-image: url(im.jpg);
+                background-size: cover;
+            }
+            p1
+            {
+                color:darkorange;
+            }
+            p2{
+                color:darkcyan;
+            }
+            p3{
+                color:blueviolet;
+            }
+            p4{
+                color:rgb(57, 197, 80);
+            }
+        
+        nav {
+            color: pink;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: red;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        P{
+            color:deeppink;
+        }
+        hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 5px;
+  size:50px;
+}
+
+        
+    </style>
+<script>
+    function validation()
+                 {
+                if (isEmpty(document.getElementById("data_2").value.trim())) {
+                alert('First name is required!');
+                return false;
+                }
+
+                if (isEmpty(document.getElementById("data_3").value.trim())) {
+                alert('Last name is required!');
+                return false;
+                }
+
+                return true;
+            }
+            function isEmpty(str){return (str.length === 0 || !str.trim());}
+
+</script>
+</head>
+<body>
+    <center>
+       <h1><p>WELCOME TO CAKES OF PARADISE</p></h1>
+    <nav>
+        <ul><li><button><a href="webpage.html">Home</a></button></li>
+            <li><button><a href="login page.html">Login</a></button></li>| 
+            <li><button><a href="registration.html">Register</a></button></li>|
+            <li><button><a href="cakes.html">Cakes</a></button></li>|
+            <li><button><a href="contact.html">Contact</a></button></li>|
+            <li><button><a href="contact.html">About Us</a></button></li>|
+            </body>
+            <p1><h1>REGISTRATION PAGE</h1></p1>
+    </nav>  
+       <hr>
+        <form method="post" action="contact.html" on submit="return validation();">
+            <div style="max-width:400px;">
+            </div>
+            <div style=" margin-left: 0; margin-right: 1%; width: 49%;">First name<span style="color: red;"> *</span><br/>
+                <input type="text" id="data_2" name="data_2" style="max-width: 100%;" class="form-control"/>
+                </div>
+                <div style=" margin-left: 1%; margin-right: 0; width: 49%;">Last name<span style="color: red;"> *</span><br/>
+                    <input type="text" id="data_3" name="data_3" style="max-width: 100%;" class="form-control"/>
+                    </div>
+      ph no:*<br>
+        <input type="tel" name="m" pattern="[0-9]{10}" ><br>
+        address:*<br>
+        <input type="text" name="ad" ><br>
+      joining date:*<br><input type="date" name="m" ><br>
+        gender:*<br>
+        <input type="radio" name="m">male<br>
+               <input type="radio" name="f">female<br></p2>
+        
+        <p3>branch:*<br>
+        <input type="checkbox" name="a">AIDS<br>
+                    <input type="checkbox" name="a">AIML<br>
+                    <input type="checkbox" name="a">CSE<br>
+                    <input type="checkbox" name="a">ECE<br></p3>
+        <p4>domain:*<br>
+        <select name="d">
+            <br><option value="aws">aws</option>
+            <option value="data">data</option>
+            <option value="html">html</option>
+            <option value="machine">machine</option><br>
+        </select></p4>
+        <br><div style="padding-bottom:18px"><br><input name="skip_submit" value="submit" type="submit"/></div> 
+    </hr>
+    </center>
+    </form>
+            </body>
+</html>
