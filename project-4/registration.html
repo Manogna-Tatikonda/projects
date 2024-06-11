@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Media Queries</title>
+        <style>
+
+             .container {
+                margin: 0 auto;
+                background: hsl(154, 94%, 37%);
+                box-sizing: border-box;
+             }
+            
+               /* Smartphones (portait and landscape )----------  */
+             
+            @media screen and (min-width: 767px)  {
+                .container {
+                    width: 100%;
+                    padding: 5px 10px;
+                }
+                        }
+
+            /* tablets , iPads (portait and landscape )----------  */
+             
+         @media screen and (min-width: 768px) and (max-width: 1024px)  {
+               
+            .container {
+                    width: 750px;
+                    padding: 5px 10px;
+                }
+            }
+
+
+          /* Low resolution Desktops and laptops ----------  */
+             
+          @media screen and (min-width: 1024px)  {
+            .container {
+                    width: 980px;
+                    padding: 5px 15px;
+                }
+            }
+      
+          /* High  resolution Desktops and laptops ----------  */
+             
+          @media screen and (min-width: 1280px)  {
+            .container {
+                    width: 1200px;
+                    padding: 5px 20px;
+                }
+            }
+/*  Smart phone      */
+                  
+@media screen and (min-width:320px )  {
+
+body {
+     background-color: aqua;
+}
+}
+/*  Tablet,ipad      */    
+
+@media Screen and (min-width:768px) and (max-width:1024px){
+body {
+     background-color: rgb(177, 48, 48);
+}
+}
+
+/* Desktops and Laptops asfsdf     */    
+
+@media Screen and (min-width:1224px) {
+body {
+     background-color: rgb(48, 151, 8);
+}
+}
+
+/* Large Screens---------  */
+@media Screen and (min-width:1824px) {
+body {
+     background-color: rgb(215, 196, 255);
+}
+}
+
+</style>
+</head>
+<body>
+        <center>
+            <div class="container">
+       <p1><h1>REGISTER PAGE</h1></p1>
+        <form action ="contact.html">
+       <p2> full name:
+        <br><input type="text" name="uname"><br>
+        mail:<br>
+        <input list="email" name="m" ><br>
+        <datalist id="email">
+        <option value="ram@gmail.com"></option>
+        <option value="ram@yahoo.com"></option>
+        <option value="ram@hotmail.com"></option>
+        <option value="ram123@gmail.com"></option>
+        </datalist>
+        date of joining:<br>
+        <input type="date" name="l"><br>
+        ph no:<br>
+        <input type="tel" name="m"pattern="[0-9]{10}"><br>
+        address:<br>
+        <input type="text" name="ad"><br>
+        gender:<br>
+        <input type="radio" name="m">male<br>
+               <input type="radio" name="f">female<br></p2>
+        <p3>branch:<br>
+        <input type="checkbox" name="a">AIDS<br>
+                    <input type="checkbox" name="a">AIML<br>
+                    <input type="checkbox" name="a">CSE<br>
+                    <input type="checkbox" name="a">ECE<br></p3>
+        <p4>domain:
+        <select name="d">
+            <option value="aws">aws</option>
+            <option value="data">data</option>
+            <option value="html">html</option>
+            <option value="machine">machine</option><br>
+        </select></p4>
+        <br><input type="submit">
+    </div>
+    </center>
+    </form>
+            </body>
+</html>
