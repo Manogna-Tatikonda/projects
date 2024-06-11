@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>loginpage</title>
+        <style>
+            body{
+                background-color: crimson;
+                background-image:url(image3.jpg);
+                background-size: cover;
+            }
+            p1{
+                color:aqua;
+            }
+            p2{
+                color:cadetblue
+            }
+        
+        nav {
+            background-color:blue;
+            color: pink;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: red;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        // User Validations
+function loginValidation() {
+            // Ramesh
+  var uname = document.myform.username.value;
+             //Ramesh@123
+  var password = document.myform.password.value;
+            if(uname==null || uname=="") {
+              alert("Name cant be blank")
+              return false;  
+           } else if (password.length<6){
+              alert("Password Must be 6 letters")
+              return false;
+           }  
+           return true ;                
+        }           
+     </script>
+</head>
+<body>
+    <nav>
+        <ul><li><button><a href="#">Home</a></button></li>|
+
+            <li><button><a href="login.html">Login</a></button></li>| 
+            <li><button><a href="registrationpage.html">Register</a></button></li>|
+            
+            <li><button><a href="#">Portfolio</a></button></li>|
+            
+            <li><button><a href="contact.html">Contact Us</a></button></li>
+            <li><button><a href="audio.html">audio</a></button></li>|
+            <li><button><a href="vedio.html">vedio</a></button></li>
+        </ul> 
+    </nav>  
+                <center>
+           <p1><h1>LOGIN</h1>
+            <form name="myform" action="registrationpage.html" onsubmit="return loginValidation(this)">
+            username:<input type="text" name="username" placeholder="username"><br>
+            password:<input type="text" name="password" placeholder="password"><br></p1>
+          <p2> <input type="submit"></p2>
+          </center>
+            </form>
+        </body>
+    </head>
+</html>
